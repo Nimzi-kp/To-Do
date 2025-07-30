@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Flow</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .drag-active {
+      opacity: 0.6;
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-tr from-blue-50 via-emerald-50 to-yellow-50 min-h-screen px-5 py-10 font-medium text-gray-700">
+
+  <header class="text-center mb-12">
+    <h1 class="text-5xl font-extrabold text-yellow-600 drop-shadow">TO <span class="text-indigo-600">-</span> <span class="text-emerald-600">DO</span></h1>
+  </header>
+
+  <main class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+    <section class="bg-white border-l-8 border-yellow-400 rounded-lg shadow p-4 flex flex-col">
+      <h2 class="text-xl font-semibold text-yellow-600 mb-4">New Tasks (<span id="new-count">0</span>)</h2>
+      <form id="new-task-form" class="flex gap-2 mb-3">
+        <input type="text" id="new-task-input" placeholder="Enter task..." class="w-full border rounded px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-300">
+        <button class="bg-yellow-500 text-white px-4 py-1 text-sm rounded hover:bg-yellow-600">Add</button>
+      </form>
+      <div id="new" class="task-zone max-h-60 flex-1 min-h-[100px] bg-yellow-50 p-2 rounded space-y-2 overflow-y-auto border border-dashed border-yellow-300"></div>
+    </section>
+
+
+    <section class="bg-white border-l-8 border-indigo-400 rounded-lg shadow p-4 flex flex-col">
+      <h2 class="text-xl font-semibold text-indigo-600 mb-4">Working (<span id="working-count">0</span>)</h2>
+      <div id="working" class="task-zone max-h-60 flex-1 min-h-[100px] bg-indigo-50 p-2 rounded space-y-2 overflow-y-auto border border-dashed border-indigo-300"></div>
+    </section>
+
+
+    <section class="bg-white border-l-8 border-emerald-400 rounded-lg shadow p-4 flex flex-col">
+      <h2 class="text-xl font-semibold text-emerald-600 mb-4">Completed (<span id="completed-count">0</span>)</h2>
+      <div id="completed" class="task-zone max-h-60 flex-1 min-h-[100px] bg-emerald-50 p-2 rounded space-y-2 overflow-y-auto border border-dashed border-emerald-300"></div>
+    </section>
+  </main>
+
+
+  <section class="mt-12 bg-white border-t-4 border-gray-400 rounded-lg shadow p-4">
+    <h2 class="text-xl font-semibold text-gray-700 mb-3">❌ Deleted Tasks (<span id="deleted-count">0</span>)</h2>
+    <div id="deleted" class="min-h-[80px] bg-gray-100 p-3 rounded space-y-2 overflow-y-auto max-h-60 border border-dashed border-gray-300"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
