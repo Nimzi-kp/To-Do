@@ -1,90 +1,50 @@
-# 🗂️ Task Flow - Drag & Drop To-Do App
 
-A simple and intuitive **To-Do List** web application with **drag-and-drop functionality**, built using **HTML**, **Vanilla JavaScript**, and **Tailwind CSS**. Tasks move through stages: New ➡️ Working ➡️ Completed ➕ Deleted section for removed tasks.
+# 🗂️ To-Do – Task Flow App
 
-## 📸 Demo
+A clean and interactive drag-and-drop to-do list app using HTML, Tailwind CSS, and Vanilla JavaScript — with localStorage support and dynamic task tracking.
 
-[Task Flow Screenshot](https://drive.google.com/file/d/1JYtl1qu2YU05yifLpJ4fLn_yrl15Md4k/view?usp=drive_link)
+[![Task Flow Screenshot](https://drive.google.com/uc?export=view&id=1JYtl1qu2YU05yifLpJ4fLn_yrl15Md4k)](https://nimzi-kp.github.io/To-Do/)
 
 ## ✨ Features
 
-- 📝 Add, edit, and delete tasks.
-- 📦 Tasks can be dragged between stages.
-- ♻️ Task data is **persisted** using `localStorage`.
-- 🧹 Deleted tasks are shown in a separate section.
-- 🔁 Dynamic task counters for all stages.
-
-## 📁 Folder Structure
-
-```
-
-project-root/
-├── index.html       # Main HTML layout
-├── script.js        # Core JavaScript logic
-├── LICENSE          # MIT LICENSE
-└── README.md        # Project documentation
-
-````
+- 📝 Add, edit, and delete tasks
+- 📦 Drag-and-drop between task stages
+- 💾 Persistent data using LocalStorage
+- 🧹 Deleted task archive
+- 🔁 Real-time task counters
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+1. **Clone the Repo**
+   ```bash
+   git clone https://github.com/Nimzi-kp/To-Do.git
+   cd To-Do
+   ```
+  
 
-```bash
-git clone https://github.com/yourusername/task-flow.git
-cd task-flow
-````
+2. **Open the App**
 
-### 2. Open in Browser
+   * Open `index.html` directly in your browser
+   * Or deploy via GitHub Pages
 
-You can simply open the `index.html` file in any modern browser:
+## 🛠 Tech Stack
 
-```bash
-open index.html
-```
+* HTML5
+* Tailwind CSS
+* JavaScript
+* LocalStorage
 
-Or just double-click it from your file explorer.
+## 🔗 Live Demo
 
-## 🔧 Tech Stack
+👉 [nimzi-kp.github.io/To-Do](https://nimzi-kp.github.io/To-Do)
 
-* **HTML5** – Semantic structure
-* **Tailwind CSS** – For utility-first styling
-* **Vanilla JavaScript** – Functional logic & drag-and-drop handling
-* **LocalStorage** – Data persistence
+## 📄 License
 
-## ✅ To-Do Workflow
-
-1. **New Tasks**: Add tasks via the input field.
-2. **Working**: Drag tasks here when in progress.
-3. **Completed**: Mark tasks as finished by dragging.
-4. **Deleted**: Remove tasks with the ❌ button, and they’ll show in this section.
-
-## 📦 LocalStorage Keys
-
-* `new`: Array of tasks in New stage
-* `working`: Array of tasks in Working stage
-* `completed`: Array of tasks in Completed stage
-* `deleted`: Array of `{ text, origin }` objects representing deleted tasks
-
-## 🛠️ Future Improvements
-
-* Add dark mode 🌙
-* Support for due dates & reminders 📅
-* Reordering with keyboard navigation
-* Export/Import task lists
-
-## 🙌 Contributing
-
-Pull requests are welcome! Feel free to fork the repo and submit your improvements.
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
+[MIT License](./LICENSE)
 
 ---
 
-### 🔗 Connect
+> Built with ❤️ by [@Nimzi-kp](https://github.com/Nimzi-kp)
 
-* GitHub: [@Nimzi-kp](https://github.com/Nimzi-kp)
 
-## Thank You ❤️
+
