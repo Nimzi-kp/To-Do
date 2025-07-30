@@ -3,7 +3,9 @@
 
 A clean and interactive drag-and-drop to-do list app using HTML, Tailwind CSS, and Vanilla JavaScript — with localStorage support and dynamic task tracking.
 
-[![Task Flow Screenshot](https://drive.google.com/uc?export=view&id=1JYtl1qu2YU05yifLpJ4fLn_yrl15Md4k)](https://nimzi-kp.github.io/To-Do/)
+## Preview
+
+[![Task Flow Screenshot](https://raw.githubusercontent.com/Nimzi-kp/To-Do/main/preview/todo.png)](https://nimzi-kp.github.io/To-Do/)
 
 ## ✨ Features
 
