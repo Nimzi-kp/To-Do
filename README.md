@@ -21,6 +21,7 @@ A simple and intuitive **To-Do List** web application with **drag-and-drop funct
 project-root/
 ├── index.html       # Main HTML layout
 ├── script.js        # Core JavaScript logic
+├── LICENSE          # MIT LICENSE
 └── README.md        # Project documentation
 
 ````
